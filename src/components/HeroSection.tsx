@@ -8,28 +8,28 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-roboto text-fintech-primary leading-tight">
-              Shaping the Future of Fintech, 
+              Shaping the Future of Fintech,
               <span className="text-fintech-growth"> One Innovation at a Time</span>
             </h1>
             <p className="text-lg md:text-xl font-inter text-fintech-supporting1">
-              We build cutting-edge financial technology solutions that power digital banking, payments, 
+              We build cutting-edge financial technology solutions that power digital banking, payments,
               and lending for businesses worldwide.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button 
+              <Button
                 className="bg-fintech-primary hover:bg-fintech-secondary text-white font-inter px-6 py-5 rounded-md"
               >
                 Explore Our Expertise
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="border-fintech-primary text-fintech-primary hover:bg-fintech-primary/5 font-inter px-6 py-5 rounded-md"
               >
                 Contact Our Team
               </Button>
             </div>
           </div>
-          
+
           {/* Modified this div to be visible on all screen sizes */}
           <div className="mt-8 md:mt-0">
             <div className="relative">
@@ -65,8 +65,8 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 w-16 md:w-24 h-16 md:h-24 bg-fintech-accent rounded-full opacity-30 z-0"></div>
-              <div className="absolute -top-4 -left-4 w-12 md:w-16 h-12 md:h-16 bg-fintech-primary rounded-full opacity-20 z-0"></div>
+              {/* <div className="absolute -bottom-4 -right-4 w-16 md:w-24 h-16 md:h-24 bg-fintech-accent rounded-full opacity-30 z-0"></div>
+              <div className="absolute -top-4 -left-4 w-12 md:w-16 h-12 md:h-16 bg-fintech-primary rounded-full opacity-20 z-0"></div> */}
             </div>
           </div>
         </div>
