@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { cn } from '@/lib/utils';
 import { Banknote, Building, CreditCard, Link as LinkIcon, TrendingUp } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { AnimatedSection } from './AnimatedSection';
 
 interface HighlightProps {
   text: string;
@@ -62,7 +62,7 @@ const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({
           isMobile ? "" : (isReversed ? "md:flex-row-reverse" : "md:flex-row"),
           "md:items-center"
         )}>
-          <div className="space-y-5 md:space-y-6 flex-1 animate-fade-in">
+          <AnimatedSection className="space-y-5 md:space-y-6 flex-1" animation="fadeInUp">
             <div className={cn("inline-flex items-center gap-3 mb-2 md:mb-4 p-3 rounded-2xl", accentColor + "/10")}>
               <span className="text-3xl">{emoji}</span>
               {getIconByEmoji(emoji)}
@@ -88,9 +88,9 @@ const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({
             >
               {ctaText} →
             </Button>
-          </div>
+          </AnimatedSection>
 
-          <div className="flex-1 mt-6 md:mt-0">
+          <AnimatedSection className="flex-1 mt-6 md:mt-0" animation="fadeIn">
             <div className="relative">
               <div className={cn("w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl flex items-center justify-center p-4 sm:p-5 md:p-8", accentColor + "/5")}>
                 <div className="w-full h-full bg-white rounded-xl shadow-lg relative overflow-hidden border border-gray-100">
@@ -118,7 +118,7 @@ const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({
               {/* <div className={cn("absolute -bottom-4 -right-4 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 rounded-full opacity-20 z-0", accentColor)}></div>
               <div className={cn("absolute -top-4 -left-4 w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full opacity-10 z-0", accentColor)}></div> */}
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>
